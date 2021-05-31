@@ -1,0 +1,21 @@
+{{#each this}}
+<section class="section">
+	<div class="caption-cont">
+		<h1 class="title">{{name}}</h1>
+	</div>
+	<div class="subscription">
+		<div>
+			<p>Capital: <span class="name-capital" </span>{{capital}}</p>
+			<p>Population: <span class="number"</span>{{population}}</p>
+			<p>Languages:</p>
+			<ul>
+				{{#each languages}}
+				<li>{{this.name}}</li>
+				<br>
+				{{/each}}
+			</ul>
+		</div>
+		<img src="{{flag}}" alt='flag {{name}}' width="300" height="200">
+	</div>
+</section>
+{{/each}}
